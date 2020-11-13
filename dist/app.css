@@ -22,40 +22,38 @@ ul {
   list-style: none;
 }
 
+button {
+  border-style: none;
+}
+
 header {
   height: 95px;
   background-color: #000;
   width: 100vmax;
   font-size: 14px;
 }
-
 header #top-bar {
   display: flex;
   height: 40px;
   justify-content: flex-end;
   align-items: flex-end;
 }
-
 header #top-bar a {
   color: #989898;
   text-decoration: none;
 }
-
 header #top-bar a:hover {
   color: white;
   text-decoration: underline;
 }
-
 header #top-bar i {
   color: #009cff;
   margin-right: 8px;
 }
-
 header li {
   display: inline;
   margin-left: 15px;
 }
-
 header .main-menu {
   display: flex;
   height: 55px;
@@ -64,19 +62,107 @@ header .main-menu {
   padding-top: 5px;
   align-items: center;
 }
-
 header .main-menu li a {
   color: #fff;
   text-decoration: none;
   padding: 15px 20px;
 }
-
 header .main-menu li a:hover {
   background-color: white;
   color: #333;
 }
-
 header #logo img {
   max-width: 120px;
 }
 
+.hero {
+  height: 500px;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+  background-size: cover;
+  padding-top: 50px;
+  color: white;
+}
+.hero i {
+  color: #5C5C5A;
+  margin-right: 5px;
+}
+.hero ul {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.hero ul li {
+  margin: 5px 0;
+}
+.hero .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero .hero-left {
+  margin-right: 40px;
+}
+.hero .hero-left .btn-download {
+  display: flex;
+  background-color: #5C5C5A;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.hero .hero-left .btn-download .btn-text {
+  padding-right: 15px;
+  text-align: left;
+  border-right: 1px solid #fff;
+}
+.hero .hero-left .btn-download .btn-text h3 {
+  padding-bottom: 3px;
+}
+.hero .hero-left .btn-download .btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  line-height: 50px;
+}
+.hero .hero-left .btn-download .btn-icon i {
+  font-size: 24px;
+  padding: 5px 0 0 15px;
+  vertical-align: middle;
+  color: white;
+}
+.hero .hero-right {
+  background-color: black;
+  padding: 15px 20px;
+  height: 440px;
+}
+.hero .hero-right .hero-right-top {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .hero-right .btn-buy {
+  margin-top: 30px;
+  background-color: #009cff;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+}
+.hero .hero-right h3 {
+  margin-bottom: 5px;
+}
+.hero .hero-right .offert-container {
+  width: 100%;
+  vertical-align: center;
+  margin-top: 40px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+.hero .hero-right .offert-container p {
+  font-size: 14px;
+}
+.hero .hero-right .offert-container a {
+  color: #009cff;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 12px;
+}
