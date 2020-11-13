@@ -1,0 +1,51 @@
+main{
+    width:100%;
+
+    #first-section{
+        width: 100%;
+        background-image: url("../img/intro-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        // background-color: steelblue;
+
+        color: white;
+
+        .container{
+            text-align: center;
+            padding-top: 80px;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: flex-end;
+            // height: 100%;
+
+            h1{
+                margin-bottom: 25px;
+                font-size: 32px;
+                font-weight: 800;
+            }
+
+            p{
+                margin-bottom: 50px;
+            }
+
+            .intro-screen{
+                margin:auto;
+
+                
+
+                #screen{
+                    
+                     max-width: 840px;
+                    background-image: url(../img/intro-screen-bg.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 0 20px;
+                                
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.secondarynav{
+    background-color: $lightBG;
+    height: 60px;
+    width: 100%;
+
+    ul{
+        display: flex;
+        line-height: 60px;
+        justify-content: space-between;
+
+       
+            a{
+                color: $textDark;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+                &:hover{
+                    background-color: white;
+                }
+
+                &.active {
+                    background-color: #fff;
+                    border-bottom: 3px inset #000;
+
+                }
+            }
+
+        
+
+
+    }
+}

@@ -26,6 +26,10 @@ button {
   border-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   height: 95px;
   background-color: #000;
@@ -79,7 +83,7 @@ header #logo img {
   height: 500px;
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
-  background-position: 70% 50%;
+  background-position: 70% 100%;
   background-size: cover;
   padding-top: 50px;
   color: white;
@@ -165,4 +169,62 @@ header #logo img {
   text-decoration: none;
   margin-top: 20px;
   font-size: 12px;
+}
+
+.secondarynav {
+  background-color: #E6E6E6;
+  height: 60px;
+  width: 100%;
+}
+.secondarynav ul {
+  display: flex;
+  line-height: 60px;
+  justify-content: space-between;
+}
+.secondarynav ul a {
+  color: #333;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.secondarynav ul a:hover {
+  background-color: white;
+}
+.secondarynav ul a.active {
+  background-color: #fff;
+  border-bottom: 3px inset #000;
+}
+
+main {
+  width: 100%;
+}
+main #first-section {
+  width: 100%;
+  background-image: url("../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+main #first-section .container {
+  text-align: center;
+  padding-top: 80px;
+}
+main #first-section .container h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 800;
+}
+main #first-section .container p {
+  margin-bottom: 50px;
+}
+main #first-section .container .intro-screen {
+  margin: auto;
+}
+main #first-section .container .intro-screen #screen {
+  max-width: 840px;
+  background-image: url(../img/intro-screen-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 20px;
 }
