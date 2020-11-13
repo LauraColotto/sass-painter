@@ -1,0 +1,69 @@
+header{
+    height: 95px;
+    background-color: $darkBG;
+    width: 100vmax;
+    font-size: 14px;
+
+
+    #top-bar{
+        @include fflex;
+        height: 40px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+
+        a{
+            color:#989898;
+            text-decoration: none;
+
+            &:hover{
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
+        i{
+            color: $textBlue;
+            margin-right: 8px;;
+        }
+    }
+
+    li{
+        display: inline;
+        margin-left:15px;
+    }
+
+    .main-menu{
+         @include fflex;
+         height: 55px;
+         justify-content: space-between;
+         color: $textLight;
+         padding-top: 5px;;
+         align-items: center;
+
+        li{
+            
+            a{
+                color: $textLight;
+                text-decoration: none;
+                padding: 15px 20px;
+
+                &:hover{
+                    background-color: white;
+                    color: $textDark;
+                }
+            }
+        }
+
+
+    }
+
+    #logo{
+
+        img{
+            max-width: 120px;
+        }
+        
+    }
+}
+
