@@ -33,7 +33,7 @@ a {
 header {
   height: 95px;
   background-color: #000;
-  width: 100vmax;
+  width: 100%;
   font-size: 14px;
 }
 header #top-bar {
@@ -83,7 +83,7 @@ header #logo img {
   height: 500px;
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
-  background-position: 70% 100%;
+  background-position: 65% 100%;
   background-size: cover;
   padding-top: 50px;
   color: white;
@@ -198,6 +198,23 @@ header #logo img {
 main {
   width: 100%;
 }
+main h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 800;
+}
+main h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 500;
+}
+main p {
+  margin-bottom: 50px;
+}
+main .container {
+  text-align: center;
+  padding-top: 80px;
+}
 main #first-section {
   width: 100%;
   background-image: url("../img/intro-bg.jpg");
@@ -206,25 +223,186 @@ main #first-section {
   background-position: center;
   color: white;
 }
-main #first-section .container {
-  text-align: center;
-  padding-top: 80px;
+main #first-section .intro-screen {
+  margin: 0 auto;
+  max-width: 840px;
 }
-main #first-section .container h1 {
-  margin-bottom: 25px;
-  font-size: 32px;
-  font-weight: 800;
-}
-main #first-section .container p {
-  margin-bottom: 50px;
-}
-main #first-section .container .intro-screen {
-  margin: auto;
-}
-main #first-section .container .intro-screen #screen {
+main #first-section .intro-screen #screen {
   max-width: 840px;
   background-image: url(../img/intro-screen-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 20px;
+}
+main #second-section {
+  margin-top: -5px;
+  background-color: white;
+  padding-bottom: 50px;
+}
+main #second-section img {
+  max-width: 840px;
+}
+main .parallax {
+  height: 650px;
+  background-attachment: fixed;
+}
+main .parallax#first-parallax {
+  background-image: url(../img/parallax-bg1.jpg);
+}
+main .parallax#second-parallax {
+  background-image: url(../img/parallax-bg2.jpg);
+}
+main #thirtd-section {
+  background-color: #222;
+  color: white;
+  padding-bottom: 20px;
+}
+main #thirtd-section #tools {
+  max-width: 840px;
+}
+main #thirtd-section .features {
+  display: flex;
+  margin: 80px 0;
+  text-align: left;
+}
+main #thirtd-section .features p {
+  line-height: 30px;
+  margin-top: 20px;
+}
+main #thirtd-section .features img {
+  max-width: 600px;
+}
+main #thirtd-section .features .features-text {
+  align-self: center;
+  padding: 0 20px;
+}
+main #inspired {
+  background-color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+main #inspired .boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 125px;
+  margin-top: 40px;
+}
+main #inspired .boxes-container .box {
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: relative;
+  margin: 20px 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 0.5s;
+}
+main #inspired .boxes-container .box:hover {
+  background-size: 110%;
+}
+main #inspired .boxes-container .box#mirror {
+  background-image: url("../img/mirror.jpg");
+}
+main #inspired .boxes-container .box#navigator {
+  background-image: url("../img/navigator.jpg");
+}
+main #inspired .boxes-container .box#kaleidoscope {
+  background-image: url("../img/kaleidoscope.jpg");
+}
+main #inspired .boxes-container .box#woodcut {
+  background-image: url("../img/woodcut.jpg");
+}
+main #inspired .boxes-container .box#lightning {
+  background-image: url("../img/lightning.jpg");
+}
+main #inspired .boxes-container .box p {
+  width: 100%;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+footer {
+  color: #333;
+  font-size: 12px;
+}
+
+#footer-top {
+  background-color: #ececec;
+  padding: 80px 0 30px;
+}
+#footer-top li:first-child {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#footer-top li {
+  margin-bottom: 5px;
+}
+#footer-top .container {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-top #social {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer-top #social li {
+  margin: 10px 10px 0 0;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  width: 30px;
+  height: 30px;
+  background-color: yellowgreen;
+}
+#footer-top #social li#instagram {
+  background-color: #E4405F;
+}
+#footer-top #social li#facebook {
+  background-color: #3B5998;
+}
+#footer-top #social li#twitter {
+  background-color: #1DA1F2;
+}
+#footer-top #social li#youtube {
+  background-color: #CD201F;
+}
+#footer-top #social li#pinterest {
+  background-color: #BD081C;
+}
+#footer-top #social li#rss {
+  background-color: #FF8D00;
+}
+
+#footer-bottom {
+  background-color: #222;
+  padding: 20px 0;
+}
+#footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-bottom #certification {
+  display: flex;
+  width: 100%;
+}
+#footer-bottom #certification img {
+  margin-right: 20px;
+}
+#footer-bottom #copy {
+  display: flex;
+  color: #ececec73;
+}
+#footer-bottom #copy li {
+  margin-right: 30px;
+}
+#footer-bottom #copy li:last-child {
+  margin-right: 0px;
+  color: #ececec;
 }

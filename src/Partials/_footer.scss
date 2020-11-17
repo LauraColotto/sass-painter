@@ -1,0 +1,93 @@
+footer{
+    color: $textDark;
+    font-size: 12px;
+}
+
+#footer-top{
+    background-color: #ececec;
+    padding: 80px 0 30px;
+
+
+    li:first-child{
+        font-size: 14px;
+        margin-bottom: 10px;;
+    }
+
+    li{
+        margin-bottom: 5px;;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #social{
+        display: flex;
+        flex-wrap: wrap;
+
+        li{
+            margin: 10px 10px 0 0;
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+            color:white;
+            width: 30px;
+            height: 30px;
+            background-color: yellowgreen;
+
+            &#instagram{
+                background-color: #E4405F;
+            }
+            &#facebook{
+                background-color: #3B5998;
+            }
+            &#twitter{
+                background-color: #1DA1F2;
+            }
+            &#youtube{
+                background-color: #CD201F;
+            }
+            &#pinterest{
+                background-color: #BD081C;
+            }
+            &#rss{
+                background-color: #FF8D00;
+            }
+        }
+    }
+}
+
+#footer-bottom{
+    background-color: #222;
+    padding: 20px 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #certification{
+        display: flex;
+        width: 100%;
+
+        img{
+            margin-right: 20px;
+        }
+
+    }
+
+    #copy{
+        display: flex;
+        color: #ececec73;
+
+        li{
+            margin-right: 30px;
+
+            &:last-child{
+                margin-right: 0px;
+                color: #ececec;
+            }
+        }
+    }
+}

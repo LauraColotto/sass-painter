@@ -1,42 +1,50 @@
 main{
     width:100%;
 
+        h1{
+            margin-bottom: 25px;
+            font-size: 32px;
+            font-weight: 800;
+        }
+        h2{
+            margin-bottom: 25px;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        p{
+            margin-bottom: 50px;
+        }
+
+    .container{
+        text-align: center;
+        padding-top: 80px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-end;
+        // height: 100%;
+
+
+    }
+
     #first-section{
         width: 100%;
         background-image: url("../img/intro-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        // background-color: steelblue;
-
         color: white;
 
-        .container{
-            text-align: center;
-            padding-top: 80px;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: flex-end;
-            // height: 100%;
 
-            h1{
-                margin-bottom: 25px;
-                font-size: 32px;
-                font-weight: 800;
-            }
-
-            p{
-                margin-bottom: 50px;
-            }
 
             .intro-screen{
-                margin:auto;
+                margin: 0 auto;
+                max-width: 840px;
 
                 
 
                 #screen{
-                    
-                     max-width: 840px;
+                    max-width: 840px;
                     background-image: url(../img/intro-screen-bg.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -44,8 +52,120 @@ main{
                                 
                 }
             }
+       
+    }
 
+    #second-section{
+        margin-top: -5px;
+        background-color: white;
+        padding-bottom: 50px;;
 
+        img{
+            max-width: 840px;
         }
+    }
+
+    .parallax{
+        height: 650px;
+        background-attachment: fixed;
+
+        &#first-parallax{
+            background-image: url(../img/parallax-bg1.jpg);
+        }
+        &#second-parallax{
+            background-image: url(../img/parallax-bg2.jpg);
+        }
+    }
+
+    #thirtd-section{
+        background-color: #222;
+        color:white;
+        padding-bottom: 20px;
+        
+
+        #tools{
+            max-width: 840px;;
+        }
+
+        .features{
+            display: flex;
+            margin: 80px 0;
+            text-align: left;
+
+            p{
+                line-height: 30px;
+                margin-top: 20px;;
+            }
+
+            & img{
+                max-width: 600px;
+            }
+            .features-text{
+                align-self: center;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    #inspired{
+        background-color: white;
+        padding: 80px 0;
+        text-align: center;
+
+        .boxes-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 125px;
+            margin-top: 40px;
+           
+            
+            .box{
+                height: 250px;
+                width: 250px;
+                background-color: black;
+                position: relative;
+                margin: 20px 0;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                transition: background-size 0.5s;
+
+                &:hover {
+                    background-size: 110%;
+                }
+
+                &#mirror {
+                    background-image: url('../img/mirror.jpg');
+                }
+
+                &#navigator {
+                    background-image: url('../img/navigator.jpg');
+                }
+
+                &#kaleidoscope {
+                    background-image: url('../img/kaleidoscope.jpg');
+                }
+
+                &#woodcut {
+                    background-image: url('../img/woodcut.jpg');
+                }
+
+                &#lightning {
+                    background-image: url('../img/lightning.jpg');
+                }
+
+                p {
+                    width: 100%;
+                    margin-bottom: 0;
+                    position: absolute;
+                    bottom: 20px;
+                    text-align: center;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+        }
+
     }
 }
